@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auriculares Gamer RGB - Poder en tu juego</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+  <!-- Partículas de fondo -->
+  <canvas id="particles-bg"></canvas>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero flex flex-col items-center justify-center min-h-screen relative z-10">
+      <img src="auriculares-gamer.png" alt="Auriculares Gamer RGB" class="w-64 drop-shadow-2xl animate-float mb-6" id="main-headset">
+      <h1 class="text-4xl md:text-6xl font-oriental-gamer text-red-600 drop-shadow-lg text-center mb-4">Poder en tu juego,<br><span class="text-gold">estilo en tu mundo</span></h1>
+      <button class="btn-neon-red mt-4 text-xl px-8 py-3 font-bold uppercase tracking-wider" id="cta-main">Compra Ahora</button>
+    </section>
+    <!-- Beneficios -->
+    <section class="benefits py-16 bg-gradient-to-b from-black via-zinc-900 to-black relative z-10">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <div class="benefit-card">
+          <img src="icono-sonido.svg" alt="Sonido 3D" class="benefit-icon">
+          <h3>Sonido envolvente 3D</h3>
+          <p>Vive cada partida con máxima inmersión y precisión auditiva.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="icono-bateria.svg" alt="Batería" class="benefit-icon">
+          <h3>Batería de larga duración</h3>
+          <p>Hasta 30 horas de juego sin interrupciones.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="icono-bluetooth.svg" alt="Bluetooth" class="benefit-icon">
+          <h3>Bluetooth 5.0</h3>
+          <p>Conexión ultra estable y sin latencia.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="icono-led.svg" alt="Luces LED" class="benefit-icon">
+          <h3>Luces LED RGB</h3>
+          <p>Personaliza tu estilo con efectos brillantes y colores vibrantes.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Prueba social -->
+    <section class="reviews py-16 bg-black relative z-10">
+      <h2 class="text-3xl md:text-4xl font-oriental-gamer text-center text-gold mb-10">Lo que dicen los gamers</h2>
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="review-card">
+          <p>“¡El sonido es brutal y las luces se ven increíbles en mi setup!”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <span class="reviewer">- Nico, 17 años</span>
+        </div>
+        <div class="review-card">
+          <p>“La batería me dura días y el bluetooth nunca falla.”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <span class="reviewer">- Sofi, 16 años</span>
+        </div>
+        <div class="review-card">
+          <p>“Me preguntan siempre dónde los compré, ¡son lo más!”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <span class="reviewer">- Agus, 18 años</span>
+        </div>
+      </div>
+    </section>
+    <!-- Oferta especial -->
+    <section class="offer py-16 bg-gradient-to-b from-black via-red-900 to-black relative z-10">
+      <div class="container mx-auto flex flex-col items-center gap-6 px-4">
+        <h2 class="text-3xl md:text-4xl font-oriental-gamer text-gold mb-2">Oferta especial limitada</h2>
+        <div class="timer text-2xl md:text-3xl font-bold text-red-500 mb-2" id="countdown"></div>
+        <p class="text-lg mb-4">¡Aprovechá el <span class="text-gold font-bold">30% OFF</span> solo por tiempo limitado!</p>
+        <button class="btn-neon-gold text-lg px-8 py-3 font-bold uppercase tracking-wider" id="cta-offer">Aprovecha el Descuento</button>
+      </div>
+    </section>
+    <!-- Comparativa -->
+    <section class="comparison py-16 bg-black relative z-10">
+      <h2 class="text-3xl md:text-4xl font-oriental-gamer text-center text-gold mb-10">¿Por qué elegirnos?</h2>
+      <div class="container mx-auto px-4">
+        <table class="comparison-table w-full text-center">
+          <thead>
+            <tr class="text-gold">
+              <th></th>
+              <th>Auriculares Gamer RGB</th>
+              <th>Comunes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sonido 3D</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Batería 30h</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Bluetooth 5.0</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Luces RGB</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Estilo gamer oriental</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Garantía -->
+    <section class="guarantee py-10 bg-gradient-to-b from-black via-zinc-900 to-black text-center relative z-10">
+      <h3 class="text-2xl md:text-3xl font-oriental-gamer text-gold mb-2">30 días de prueba o devolución garantizada</h3>
+      <p class="text-lg">¡Sin riesgos! Si no te convencen, te devolvemos tu dinero.</p>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer py-8 bg-black border-t border-zinc-800 relative z-10">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-4">
+      <div class="social flex gap-4">
+        <a href="https://wa.me/5491123456789" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp"><img src="icono-whatsapp.svg" alt="WhatsApp"></a>
+        <a href="https://instagram.com/tu_tienda" target="_blank" class="social-icon instagram" aria-label="Instagram"><img src="icono-instagram.svg" alt="Instagram"></a>
+        <a href="https://tiktok.com/@tu_tienda" target="_blank" class="social-icon tiktok" aria-label="TikTok"><img src="icono-tiktok.svg" alt="TikTok"></a>
+      </div>
+      <form class="newsletter flex gap-2" id="newsletter-form">
+        <input type="email" placeholder="Tu email" class="newsletter-input" required>
+        <button type="submit" class="btn-neon-red">Suscribirme</button>
+      </form>
+      <span class="text-zinc-500 text-sm">&copy; 2025 Auriculares Gamer RGB</span>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

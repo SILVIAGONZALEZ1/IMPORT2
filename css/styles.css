@@ -1,0 +1,177 @@
+/* Tailwind CDN para prototipado rápido */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+:root {
+  --gold: #FFD700;
+  --red: #E10600;
+  --black: #0a0a0a;
+  --neon: #ff003c;
+}
+
+body {
+  font-family: 'Zen Dots', 'Orbitron', Arial, sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.font-oriental-gamer {
+  font-family: 'Zen Dots', 'Orbitron', Arial, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.benefit-card {
+  background: rgba(30, 30, 30, 0.95);
+  border: 2px solid var(--red);
+  border-radius: 1.5rem;
+  padding: 2rem 1.2rem;
+  box-shadow: 0 0 24px 0 var(--red), 0 0 8px 0 var(--gold);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.benefit-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 0 32px 0 var(--neon), 0 0 16px 0 var(--gold);
+}
+.benefit-icon {
+  width: 48px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px var(--gold));
+}
+
+.btn-neon-red {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 0 16px 2px var(--neon), 0 0 4px 0 var(--gold);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn-neon-red:hover {
+  background: #ff003c;
+  box-shadow: 0 0 32px 4px var(--neon), 0 0 16px 0 var(--gold);
+  transform: scale(1.05);
+}
+
+.btn-neon-gold {
+  background: var(--gold);
+  color: #0a0a0a;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 0 16px 2px var(--gold), 0 0 4px 0 var(--red);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn-neon-gold:hover {
+  background: #fffbe6;
+  box-shadow: 0 0 32px 4px var(--gold), 0 0 16px 0 var(--red);
+  transform: scale(1.05);
+}
+
+.review-card {
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid var(--gold);
+  border-radius: 1.5rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 16px 0 var(--gold);
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stars {
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+.reviewer {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.comparison-table {
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  background: rgba(20, 20, 20, 0.98);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 16px 0 var(--gold);
+}
+.comparison-table th, .comparison-table td {
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #222;
+}
+.comparison-table th {
+  font-size: 1.1rem;
+  color: var(--gold);
+  background: #181818;
+}
+.comparison-table td {
+  font-size: 1.05rem;
+}
+
+.newsletter-input {
+  border-radius: 9999px;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid var(--gold);
+  background: #181818;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+.newsletter-input:focus {
+  border: 2px solid var(--red);
+}
+
+.social-icon img {
+  width: 32px;
+  filter: drop-shadow(0 0 6px var(--gold));
+  transition: filter 0.2s, transform 0.2s;
+}
+.social-icon:hover img {
+  filter: drop-shadow(0 0 16px var(--red));
+  transform: scale(1.1);
+}
+
+/* Animaciones */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+/* Partículas de fondo */
+#particles-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .benefit-card, .review-card {
+    padding: 1.2rem 0.7rem;
+  }
+  .comparison-table th, .comparison-table td {
+    padding: 0.7rem 0.2rem;
+    font-size: 0.95rem;
+  }
+}
